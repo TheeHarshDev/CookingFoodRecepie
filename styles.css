@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f5e5e5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Optional: Adds a dark overlay */
+    z-index: -1; /* Keeps the overlay behind all other content */
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ff6f61;
+}
+
+.generator {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+#generate-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5); /* Initial subtle glow */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+#generate-btn:hover {
+    background-color: #ff4b3a;
+    box-shadow: 0 0 20px rgba(255, 111, 97, 0.8), 0 0 40px rgba(255, 111, 97, 0.6); /* Intense neon glow on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+#choose-language-label {
+    font-size: 1.5em;  /* Adjust the size as needed */
+    font-weight: bold; /* Make it bold if desired */
+    margin-bottom: 10px;
+    color: white;      /* Keep the color consistent with your theme */
+    text-align: center; /* Center the text */
+}
+
+/* Select Styles */
+#language-select {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    border: 2px solid #ff6f61; /* Border matching the button color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+#language-select:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+
+#recipe-output {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #ecebeb;
+}
