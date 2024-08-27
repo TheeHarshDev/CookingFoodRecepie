@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Food Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Code Food Recipe Generator</h1>
+        <p>Mixing Code & Cuisine!</p>
+    </header>
+    
+    <main>
+        <section class="generator">
+            <label for="language-select">Choose a Programming Language:</label>
+            <select id="language-select">
+                <option value="">Select a language</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="ruby">Ruby</option>
+                <option value="php">PHP</option>
+                <option value="swift">Swift</option>
+                <option value="typescript">TypeScript</option>
+                <option value="go">Go</option>
+                <option value="kotlin">Kotlin</option>
+                <option value="rust">Rust</option>
+                <option value="sql">SQL</option>
+                <!-- Add more options as needed -->
+            </select>
+            <button id="generate-btn">Generate Recipe</button>
+        </section>
+        
+        <section id="recipe-output">
+            <!-- Generated recipe will appear here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Code Food. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
